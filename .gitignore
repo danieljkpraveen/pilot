@@ -1,0 +1,8 @@
+env/
+venv/
+.env/
+.venv/
+__pycache__/
+docs/_build/
+.pdm.toml
+.vscode/
