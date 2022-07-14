@@ -4,11 +4,11 @@ from utils import ltr, num, smb
 
 def password_generator(letters, symbols, numbers):
     passwd = list()
-    for char in range(1, letters + 1):
+    for char in range(letters):
         passwd.append(random.choice(ltr))
-    for char in range(1, symbols + 1):
+    for sym in range(symbols):
         passwd.append(random.choice(smb))
-    for char in range(1, numbers + 1):
+    for numb in range(numbers):
         passwd.append(random.choice(num))
     random.shuffle(passwd)
     password = ""
