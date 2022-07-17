@@ -1,0 +1,84 @@
+echo ⌛ updating packages
+echo
+sudo apt update
+sudo apt full-upgrade
+echo
+echo ✅ updated successfully
+echo
+echo ⌛ installing python3
+echo
+sudo apt install python3.10 python3.10-venv
+sudo apt install python3-pip
+echo
+echo ✅ installed python3.10 and pip
+echo
+echo ⌛ installing JDK
+echo
+sudo apt install default-jre default-jdk
+echo
+echo ✅ installed JDK
+echo
+echo ⌛ installing app distributors
+echo
+sudo apt install snapd snap flatpak synaptic
+flatpak remote-add --user --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+echo
+echo ✅ installed snap, flatpak, and synaptic
+echo
+echo ⌛ installing apps
+echo
+flatpak install flathub com.visualstudio.code
+flatpak install flathub io.github.gitahead.GitAhead
+flatpak install flathub com.spotify.Client
+flatpak install flathub io.github.shiftey.Desktop
+flatpak install flathub org.gnome.Epiphany
+flatpak install flathub org.gnome.Todo
+flatpak install flathub org.gnome.Notes
+flatpak install flathub org.gnome.Extensions
+flatpak install flathub com.mattjakeman.ExtensionManager
+flatpak install flathub org.gnome.TextEditor
+flatpak install flathub io.posidon.Paper
+flatpak install flathub com.github.hugolabe.Wike
+flatpak install flathub org.gnome.clocks
+flatpak install flathub com.github.arshubham.gitignore
+flatpak install flathub rest.insomnia.Insomnia
+sudo apt install telegram-desktop mpv net-tools aircrack-ng reaver autopsy git curl wget soundconverter
+echo
+echo ✅ installed apps
+echo --------------------------------------------------------------------------------
+echo
+echo visualstudio Code: flatpak run com.visualstudio.code
+echo
+echo githead: flatpak run io.github.gitahead.GitAhead
+echo
+echo spotify: flatpak run com.spotify.Client
+echo
+echo github: flatpak run io.github.shiftey.Desktop
+echo
+echo Epiphany: flatpak run org.gnome.Epiphany
+echo
+echo Todo: flatpak run org.gnome.Todo
+echo
+echo Notes: flatpak run org.gnome.Notes
+echo
+echo Extensions: flatpak run org.gnome.Extensions
+echo
+echo ExtensionManager: flatpak run com.mattjakeman.ExtensionManager
+echo
+echo TextEditor: flatpak run org.gnome.TextEditor
+echo
+echo Paper: flatpak run io.posidon.Paper
+echo
+echo Wike: flatpak run com.github.hugolabe.Wike
+echo
+echo clocks: flatpak run org.gnome.clocks
+echo
+echo gitignore: flatpak run com.github.arshubham.gitignore
+echo
+echo Insomnia: flatpak run rest.insomnia.Insomnia
+echo
+echo Telegram: telegram-desktop
+echo
+echo Sound Converter: soundconverter
+echo
+echo ------------------------------------------------------------------------------- 
