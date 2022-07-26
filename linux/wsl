@@ -1,0 +1,10 @@
+sudo apt update
+sudo apt full-upgrade
+sudo apt autoremove
+sudo apt update
+sudo apt install git curl wget default-jre default-jdk build-essential zsh
+git config --global user.name "danieljkpraveen"
+git config --global user.email "danieljkpraveen@gmail.com"
+sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+ssh-keygen -t rsa -b 2048 -C "wsl-linux"
+cat ~/.ssh/id_rsa.pub
